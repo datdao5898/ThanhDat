@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thành Đạt - Thiết Kế Website Phong Cách Độc Đáo | Tối Ưu SEO & Tốc Độ</title>
+
+    <!-- Meta Tags for SEO and Social Sharing -->
+    <meta name="description" content="Thành Đạt chuyên thiết kế website với các phong cách độc đáo như Liquid Glass, Minimalism, Claymorphism và nhiều hơn nữa. Dịch vụ tối ưu SEO, tốc độ và bảo trì chuyên nghiệp.">
+    <meta name="keywords" content="thiết kế website, website liquid glass, website minimalism, website claymorphism, web neo-brutalism, web retro y2k, web dark mode neon, web 3d parallax, tối ưu SEO website, tối ưu tốc độ web, bảo trì website, Hostinger">
+    <link rel="canonical" href="https://yourwebsite.com/"> <!-- Replace with your actual website URL -->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com/"> <!-- Replace with your actual website URL -->
+    <meta property="og:title" content="Thành Đạt - Thiết Kế Website Phong Cách Độc Đáo | Tối Ưu SEO & Tốc Độ">
+    <meta property="og:description" content="Thành Đạt chuyên thiết kế website với các phong cách độc đáo như Liquid Glass, Minimalism, Claymorphism và nhiều hơn nữa. Dịch vụ tối ưu SEO, tốc độ và bảo trì chuyên nghiệp.">
+    <meta property="og:image" content="https://placehold.co/1200x630/1a202c/e2e8f0?text=Thanh+Dat+Web+Design"> <!-- Replace with a relevant image URL -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourwebsite.com/"> <!-- Replace with your actual website URL -->
+    <meta property="twitter:title" content="Thành Đạt - Thiết Kế Website Phong Cách Độc Đáo | Tối Ưu SEO & Tốc Độ">
+    <meta property="twitter:description" content="Thành Đạt chuyên thiết kế website với các phong cách độc đáo như Liquid Glass, Minimalism, Claymorphism và nhiều hơn nữa. Dịch vụ tối ưu SEO, tốc độ và bảo trì chuyên nghiệp.">
+    <meta property="twitter:image" content="https://placehold.co/1200x630/1a202c/e2e8f0?text=Thanh+Dat+Web+Design"> <!-- Replace with a relevant image URL -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E✨%3C/text%3E%3C/svg%3E">
+    <!-- Alternatively, you can use a .ico or .png file: -->
+    <!-- <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+    <!-- <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32"> -->
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased leading-normal tracking-wide">
+
+    <!-- Header -->
+    <header class="p-6 fixed w-full z-10 glass-effect rounded-b-xl">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-white rounded-md px-3 py-1 bg-gradient-to-r from-purple-600 to-blue-500 shadow-lg">Thành Đạt</a>
+            
+            <!-- Desktop Navigation -->
+            <div class="flex space-x-6">
+                <a href="#about-us" class="text-white hover:text-purple-300 transition duration-300 ease-in-out">Về Tôi</a>
+                <a href="#services" class="text-white hover:text-purple-300 transition duration-300 ease-in-out">Dịch Vụ</a>
+                <a href="#packages" class="text-white hover:text-purple-300 transition duration-300 ease-in-out">Gói Dịch Vụ</a>
+                <a href="#working-process" class="text-white hover:text-purple-300 transition duration-300 ease-in-out">Quy Trình</a>
+                <a href="#free-templates" class="text-white hover:text-purple-300 transition duration-300 ease-in-out">Template Miễn Phí</a>
+                <a href="#refund-policy" class="text-white hover:text-purple-300 transition duration-300 ease-in-out">Chính Sách Hoàn Tiền</a>
+                <a href="#contact" class="text-white hover:text-purple-300 transition duration-300 ease-in-out">Liên Hệ</a>
+            </div>
+
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <a href="#about-us" class="mobile-nav-item">Về Tôi</a>
+        <a href="#services" class="mobile-nav-item">Dịch Vụ</a>
+        <a href="#packages" class="mobile-nav-item">Gói Dịch Vụ</a>
+        <a href="#working-process" class="mobile-nav-item">Quy Trình</a>
+        <a href="#free-templates" class="mobile-nav-item">Template Miễn Phí</a>
+        <a href="#refund-policy" class="mobile-nav-item">Chính Sách Hoàn Tiền</a>
+        <a href="#contact" class="mobile-nav-item">Liên Hệ</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center overflow-hidden px-4 md:px-0">
+        <!-- Background Image for Hero Section - Dynamic based on cycling style -->
+        <img id="hero-background-image" 
+             src="https://images.unsplash.com/photo-1616712391266-7d12f4d6d3d3?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+             alt="Abstract background with liquid glass effect" 
+             class="absolute inset-0 w-full h-full object-cover opacity-80 transition-opacity duration-500 ease-in-out">
+
+        <div class="relative  max-w-4xl mx-auto p-8 glass-effect rounded-2xl shadow-xl fade-in">
+            <h1 class="text-3xl md:text-7xl font-extrabold text-white mb-6 leading-relaxed">
+                Thiết Kế Website Phong Cách <br>
+                <span id="design-style-text" class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 inline-block cursor-pointer" title="Nhấp để tìm hiểu thêm về phong cách này">Liquid Glass</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">
+                Mang đến trải nghiệm người dùng mượt mà, tinh tế và độc đáo.
+            </p>
+            <!-- Button with new liquid glass style - Made larger -->
+            <a href="#contact" class="inline-flex items-center justify-center align-middle select-none font-sans font-medium text-center px-6 py-3 text-white text-base rounded-lg antialiased liquid-glass-button">
+                Bắt Đầu Dự Án Của Bạn
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="py-20 bg-gray-950 section-dynamic-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-white mb-12 fade-in">Về Tôi - Thành Đạt</h2>
+            <div class="max-w-3xl mx-auto text-center fade-in">
+                <p class="text-lg text-gray-300 mb-6">
+                    Tại Thành Đạt, tôi chuyên thiết kế và phát triển website với phong cách "Liquid Glass" độc đáo, mang đến những trải nghiệm trực tuyến mượt mà, tinh tế và đầy ấn tượng. Tôi tin rằng một website không chỉ là nơi hiển thị thông tin, mà còn là một tác phẩm nghệ thuật kỹ thuật số phản ánh đẳng cấp và tầm nhìn của bạn.
+                </p>
+                <p class="text-lg text-gray-300">
+                    Với kinh nghiệm và sự sáng tạo không ngừng, Thành Đạt cam kết kiến tạo những giải pháp website tối ưu, không chỉ về mặt thẩm mỹ mà còn về hiệu suất và khả năng tương tác. Hãy để tôi đồng hành cùng bạn trên hành trình số hóa, biến ý tưởng thành hiện thực và đưa thương hiệu của bạn tỏa sáng trên không gian mạng.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 section-dynamic-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-white mb-12 fade-in">Dịch Vụ Của Tôi</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="p-8 glass-effect rounded-2xl text-center fade-in">
+                    <!-- Icon for UI/UX Design -->
+                    <div class="text-5xl mb-4 text-purple-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paintbrush-2"><path d="M14 19l-7-7 4-4L19 10"/><path d="M15 7l2-2.5A1 1 0 0118 4l1.5 1.5a1 1 0 010 1L16 9"/><path d="M16 16l-3.5 3.5a2.24 2.24 0 01-3.7-.9L6 18l-3 3 1-3 1.5-1.5a2.24 2.24 0 01-.9-3.7L8 16"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Thiết Kế UI/UX Cao Cấp</h3>
+                    <p class="text-gray-300">Tạo ra giao diện người dùng trực quan, đẹp mắt và trải nghiệm người dùng mượt mà.</p>
+                </div>
+                <div class="p-8 glass-effect rounded-2xl text-center fade-in">
+                    <!-- Icon for Cross-platform Website Development -->
+                    <div class="text-5xl mb-4 text-blue-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-laptop-2"><rect width="20" height="12" x="2" y="6" rx="2" ry="2"/><path d="M22 18H2"/><path d="M6 18h4"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Phát Triển Website Đa Nền Tảng</h3>
+                    <p class="text-gray-300">Xây dựng website đáp ứng trên mọi thiết bị, từ di động đến máy tính để bàn.</p>
+                </div>
+                <div class="p-8 glass-effect rounded-2xl text-center fade-in">
+                    <!-- Icon for Speed Optimization -->
+                    <div class="text-5xl mb-4 text-pink-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge"><path d="M12 15V9"/><path d="M12 12V3"/><path d="M6 12L2 9"/><path d="M18 12L22 9"/><path d="M4.93 16.94l-2.06 2.06A7.01 7.01 0 0012 22a7.01 7.01 0 009.13-3.07l-2.06-2.06"/><path d="M12 3l-1.5 7.5L12 15l1.5-7.5L12 3z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Tối Ưu Hóa Tốc Độ</h3>
+                    <p class="text-gray-300">Đảm bảo website của bạn tải nhanh chóng, nâng cao trải nghiệm người dùng.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-20 bg-gray-950 section-dynamic-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-white mb-12 fade-in">Các Gói Dịch Vụ</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Package 1: Gói Website Cơ Bản -->
+                <div class="p-8 glass-effect rounded-2xl text-center fade-in border-2 border-purple-500">
+                    <h3 class="text-3xl font-semibold text-white mb-4">Gói Website Cơ Bản</h3>
+                    <p class="text-5xl font-bold text-purple-400 mb-6">Liên Hệ</p>
+                    <ul class="text-gray-300 text-left space-y-2 mb-8">
+                        <li>✅ Thiết kế giao diện cơ bản</li>
+                        <li>✅ Website 5 trang</li>
+                        <li>✅ Hỗ trợ 1 tháng</li>
+                        <li class="font-bold text-blue-400">⭐ Tặng kèm tên miền & Hosting giá rẻ tại Hostinger (dưới 50k/tháng)</li>
+                    </ul>
+                    <!-- Button with new liquid glass style - Made larger -->
+                    <a href="#contact" class="select-package-btn inline-flex items-center justify-center align-middle select-none font-sans font-medium text-center px-6 py-3 text-white text-base rounded-lg antialiased liquid-glass-button" data-package="Gói Website Cơ Bản">
+                        Chọn Gói Cơ Bản
+                    </a>
+                </div>
+                <!-- Package 2: Gói Website Nâng Cao -->
+                <div class="p-8 glass-effect rounded-2xl text-center fade-in border-2 border-blue-500 transform scale-105 shadow-xl">
+                    <h3 class="text-3xl font-semibold text-white mb-4">Gói Website Nâng Cao</h3>
+                    <p class="text-5xl font-bold text-blue-400 mb-6">Liên Hệ</p>
+                    <ul class="text-gray-300 text-left space-y-2 mb-8">
+                        <li>✅ Thiết kế giao diện tùy chỉnh</li>
+                        <li>✅ Website lên đến 10 trang</li>
+                        <li>✅ Tích hợp E-commerce cơ bản</li>
+                        <li>✅ Hỗ trợ 3 tháng</li>
+                        <li class="font-bold text-blue-400">⭐ Tặng kèm tên miền & Hosting giá rẻ tại Hostinger (dưới 50k/tháng)</li>
+                    </ul>
+                    <!-- Button with new liquid glass style - Made larger -->
+                    <a href="#contact" class="select-package-btn inline-flex items-center justify-center align-middle select-none font-sans font-medium text-center px-6 py-3 text-white text-base rounded-lg antialiased liquid-glass-button" data-package="Gói Website Nâng Cao">
+                        Chọn Gói Nâng Cao
+                    </a>
+                </div>
+                <!-- Package 3: Gói Website Cao Cấp -->
+                <div class="p-8 glass-effect rounded-2xl text-center fade-in border-2 border-pink-500">
+                    <h3 class="text-3xl font-semibold text-white mb-4">Gói Website Cao Cấp</h3>
+                    <p class="text-5xl font-bold text-pink-400 mb-6">Liên Hệ</p>
+                    <ul class="text-gray-300 text-left space-y-2 mb-8">
+                        <li>✅ Thiết kế giao diện độc quyền</li>
+                        <li>✅ Website không giới hạn trang</li>
+                        <li>✅ Tích hợp E-commerce đầy đủ</li>
+                        <li>✅ Hệ thống quản lý nội dung (CMS)</li>
+                        <li>✅ Hỗ trợ 6 tháng & Bảo trì</li>
+                        <li class="font-bold text-blue-400">⭐ Tặng kèm tên miền & Hosting giá rẻ tại Hostinger (dưới 50k/tháng)</li>
+                    </ul>
+                    <!-- Button with new liquid glass style - Made larger -->
+                    <a href="#contact" class="select-package-btn inline-flex items-center justify-center align-middle select-none font-sans font-medium text-center px-6 py-3 text-white text-base rounded-lg antialiased liquid-glass-button" data-package="Gói Website Cao Cấp">
+                        Chọn Gói Cao Cấp
+                    </a>
+                </div>
+                <!-- Combined SEO Optimization Package -->
+                <div class="p-8 glass-effect rounded-2xl text-center fade-in border-2 border-green-500 transform scale-105 shadow-xl">
+                    <h3 class="text-3xl font-semibold text-white mb-4">Gói Tối Ưu Hóa SEO</h3>
+                    <p class="text-5xl font-bold text-green-400 mb-6">Liên Hệ</p>
+                    <ul class="text-gray-300 text-left space-y-2 mb-8">
+                        <li>✅ Nghiên cứu từ khóa chuyên sâu</li>
+                        <li>✅ Tối ưu On-page (không giới hạn trang)</li>
+                        <li>✅ Tối ưu Off-page cơ bản (link building)</li>
+                        <li>✅ Phân tích đối thủ cạnh tranh</li>
+                        <li>✅ Cấu hình Google Analytics & Search Console</li>
+                        <li>✅ Báo cáo chi tiết hàng tháng</li>
+                    </ul>
+                    <a href="#contact" class="select-package-btn inline-flex items-center justify-center align-middle select-none font-sans font-medium text-center px-6 py-3 text-white text-base rounded-lg antialiased liquid-glass-button" data-package="Gói Tối Ưu Hóa SEO">
+                        Chọn Gói Tối Ưu SEO
+                    </a>
+                </div>
+                <!-- New Maintenance Package -->
+                <div class="p-8 glass-effect rounded-2xl text-center fade-in border-2 border-yellow-500">
+                    <h3 class="text-3xl font-semibold text-white mb-4">Gói Bảo Trì Trang Web</h3>
+                    <p class="text-5xl font-bold text-yellow-400 mb-6">Liên Hệ</p>
+                    <ul class="text-gray-300 text-left space-y-2 mb-8">
+                        <li>✅ Cập nhật Plugin & Theme</li>
+                        <li>✅ Sao lưu dữ liệu định kỳ</li>
+                        <li>✅ Giám sát bảo mật website</li>
+                        <li>✅ Khắc phục sự cố kỹ thuật cơ bản</li>
+                        <li>✅ Báo cáo tình trạng hàng tháng</li>
+                    </ul>
+                    <a href="#contact" class="select-package-btn inline-flex items-center justify-center align-middle select-none font-sans font-medium text-center px-6 py-3 text-white text-base rounded-lg antialiased liquid-glass-button" data-package="Gói Bảo Trì Trang Web">
+                        Chọn Gói Bảo Trì
+                    </a>
+                </div>
+                 <!-- Speed Optimization Package (moved from its previous position) -->
+                 <div class="p-8 glass-effect rounded-2xl text-center fade-in border-2 border-red-500">
+                    <h3 class="text-3xl font-semibold text-white mb-4">Gói Tối Ưu Hóa Tốc Độ</h3>
+                    <p class="text-5xl font-bold text-red-400 mb-6">Liên Hệ</p>
+                    <ul class="text-gray-300 text-left space-y-2 mb-8">
+                        <li>✅ Tối ưu hình ảnh & video</li>
+                        <li>✅ Tối ưu mã nguồn (HTML, CSS, JS)</li>
+                        <li>✅ Cấu hình caching & CDN</li>
+                        <li>✅ Đánh giá Core Web Vitals</li>
+                        <li>✅ Báo cáo cải thiện tốc độ</li>
+                    </ul>
+                    <a href="#contact" class="select-package-btn inline-flex items-center justify-center align-middle select-none font-sans font-medium text-center px-6 py-3 text-white text-base rounded-lg antialiased liquid-glass-button" data-package="Gói Tối Ưu Hóa Tốc Độ">
+                        Chọn Gói Tối Ưu Tốc Độ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Working Process Section -->
+    <section id="working-process" class="py-20 section-dynamic-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-white mb-12 fade-in">Quy Trình Làm Việc</h2>
+
+            <!-- Quy Trình Thiết Kế & Phát Triển Website (Đã bao gồm SEO & Tối ưu) -->
+            <h3 class="text-3xl font-bold text-center text-white mt-12 mb-8 fade-in">Quy Trình Thiết Kế & Phát Triển Website (Đã bao gồm SEO & Tối ưu)</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <!-- Step 1: Kích Hoạt Dự Án & Lập Kế Hoạch -->
+                <div class="p-6 glass-effect rounded-2xl text-center fade-in">
+                    <div class="text-6xl mb-4 text-blue-400">1</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Kích Hoạt Dự Án & Lập Kế Hoạch</h3>
+                    <p class="text-gray-300">Sau khi thống nhất, bạn thanh toán **25%** chi phí dự án để tôi tiến hành khởi động. Tôi sẽ lắng nghe ý tưởng, phân tích yêu cầu và nghiên cứu từ khóa ban đầu, sau đó xây dựng lộ trình phát triển chi tiết tập trung vào hiệu suất.</p>
+                </div>
+                <!-- Step 2: Thiết Kế UI/UX -->
+                <div class="p-6 glass-effect rounded-2xl text-center fade-in">
+                    <div class="text-6xl mb-4 text-purple-400">2</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Thiết Kế UI/UX</h3>
+                    <p class="text-gray-300">Phác thảo giao diện trực quan, tạo mockup và prototype, đảm bảo trải nghiệm người dùng tối ưu và cấu trúc thân thiện SEO.</p>
+                </div>
+                <!-- Step 3: Phát Triển & Lập Trình -->
+                <div class="p-6 glass-effect rounded-2xl text-center fade-in">
+                    <div class="text-6xl mb-4 text-pink-400">3</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Phát Triển & Lập Trình</h3>
+                    <p class="text-gray-300">Triển khai thiết kế thành code sạch, tối ưu hình ảnh/mã nguồn, cấu hình caching/CDN và tích hợp các tính năng cần thiết.</p>
+                </div>
+                <!-- Step 4: Kiểm Thử & Bàn Giao -->
+                <div class="p-6 glass-effect rounded-2xl text-center fade-in">
+                    <div class="text-6xl mb-4 text-green-400">4</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Kiểm Thử & Bàn Giao</h3>
+                    <p class="text-gray-300">Kiểm tra toàn diện chức năng, tối ưu hóa tốc độ, cấu hình Google Analytics/Search Console và bàn giao dự án hoàn chỉnh.</p>
+                </div>
+            </div>
+
+            <!-- Quy Trình Bảo Trì Trang Web (Nếu có) -->
+            <h3 class="text-3xl font-bold text-center text-white mt-12 mb-8 fade-in">Quy Trình Bảo Trì Trang Web (Nếu có)</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Step 1 (Maintenance) -->
+                <div class="p-6 glass-effect rounded-2xl text-center fade-in">
+                    <div class="text-6xl mb-4 text-indigo-400">1</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Cập Nhật & Sao Lưu Định Kỳ</h3>
+                    <p class="text-gray-300">Đảm bảo hệ thống, theme, plugin luôn được cập nhật phiên bản mới nhất và sao lưu dữ liệu an toàn.</p>
+                </div>
+                <!-- Step 2 (Maintenance) -->
+                <div class="p-6 glass-effect rounded-2xl text-center fade-in">
+                    <div class="text-6xl mb-4 text-gray-400">2</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Giám Sát An Ninh & Khắc Phục Sự Cố</h3>
+                    <p class="text-gray-300">Liên tục theo dõi các mối đe dọa bảo mật, hiệu suất hoạt động và xử lý nhanh chóng mọi vấn đề phát sinh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Templates Section -->
+    <section id="free-templates" class="py-20 bg-gray-950 section-dynamic-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-white mb-12 fade-in">Gợi Ý Template WordPress Miễn Phí</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Template Item 1: Astra Theme -->
+                <div class="glass-effect rounded-2xl overflow-hidden shadow-lg fade-in">
+                    <img src="https://images.unsplash.com/photo-1542831371-d68a2d3b20e0?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Abstract code for web design" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Astra Theme</h3>
+                        <p class="text-gray-400">Nhanh, nhẹ và cực kỳ linh hoạt. Astra là một trong những theme WordPress phổ biến nhất với thư viện template lớn.</p>
+                        <a href="https://wpastra.com/" target="_blank" class="block text-blue-400 hover:underline mt-4">Xem chi tiết</a>
+                    </div>
+                </div>
+                <!-- Template Item 2: OceanWP Theme -->
+                <div class="glass-effect rounded-2xl overflow-hidden shadow-lg fade-in">
+                    <img src="https://images.pexels.com/photos/10313880/pexels-photo-10313880.jpeg?auto=compress&cs=tinysrgb&w=1200&h=675" alt="Abstract digital wave" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white mb-2">OceanWP Theme</h3>
+                        <p class="text-gray-400">Theme đa năng với nhiều tùy chọn tùy chỉnh và hỗ trợ WooCommerce tuyệt vời.</p>
+                        <a href="https://oceanwp.org/" target="_blank" class="block text-blue-400 hover:underline mt-4">Xem chi tiết</a>
+                    </div>
+                </div>
+                <!-- Template Item 3: GeneratePress Theme -->
+                <div class="glass-effect rounded-2xl overflow-hidden shadow-lg fade-in">
+                    <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1200&h=675" alt="Coding environment" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white mb-2">GeneratePress Theme</h3>
+                        <p class="text-gray-400">Tập trung vào hiệu suất và khả năng tương thích với trình tạo trang, rất phù hợp cho SEO.</p>
+                        <a href="https://generatepress.com/" target="_blank" class="block text-blue-400 hover:underline mt-4">Xem chi tiết</a>
+                    </div>
+                </div>
+                <!-- Template Item 4: Neve Theme -->
+                <div class="glass-effect rounded-2xl overflow-hidden shadow-lg fade-in">
+                    <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1200&h=675" alt="Abstract lines representing modern tech" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Neve Theme</h3>
+                        <p class="text-gray-400">Theme hiện đại, nhanh và dễ dàng tùy chỉnh, hoàn hảo cho các trang web doanh nghiệp nhỏ và blog.</p>
+                        <a href="https://themeisle.com/themes/neve/" target="_blank" class="block text-blue-400 hover:underline mt-4">Xem chi tiết</a>
+                    </div>
+                </div>
+                <!-- Template Item 5: Kadence Theme -->
+                <div class="glass-effect rounded-2xl overflow-hidden shadow-lg fade-in">
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1200&h=675" alt="Abstract code blocks" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Kadence Theme</h3>
+                        <p class="text-gray-400">Theme WordPress đầy đủ tính năng, tập trung vào hiệu suất và khả năng tương thích với Gutenberg.</p>
+                        <a href="https://www.kadencewp.com/theme/" target="_blank" class="block text-blue-400 hover:underline mt-4">Xem chi tiết</a>
+                    </div>
+                </div>
+                <!-- Template Item 6: Blocksy Theme -->
+                <div class="p-8 glass-effect rounded-2xl overflow-hidden shadow-lg fade-in">
+                    <img src="https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg?auto=compress&cs=tinysrgb&w=1200&h=675" alt="Colorful fluid abstract design" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Blocksy Theme</h3>
+                        <p class="text-gray-400">Một theme sáng tạo, nhẹ và cực kỳ tùy biến được xây dựng với các công nghệ web mới nhất.</p>
+                        <a href="https://creativethemes.com/blocksy/" target="_blank" class="block text-blue-400 hover:underline mt-4">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Refund Policy Section (New Section) -->
+    <section id="refund-policy" class="py-20 bg-gray-950 section-dynamic-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-white mb-12 fade-in">Chính Sách Hoàn Tiền</h2>
+            <div class="max-w-3xl mx-auto p-8 glass-effect rounded-2xl shadow-xl fade-in">
+                <p class="text-lg text-gray-300 mb-4">
+                    Thành Đạt cam kết mang lại sự hài lòng tối đa cho khách hàng. Nếu bạn không hài lòng với kết quả cuối cùng của dự án website sau khi đã trải qua các vòng chỉnh sửa và phản hồi theo hợp đồng, chúng tôi có chính sách hoàn tiền rõ ràng.
+                </p>
+                <p class="text-lg text-gray-300 mb-4">
+                    **Điều kiện áp dụng:** Chính sách hoàn tiền chỉ áp dụng cho phần chi phí dịch vụ thiết kế và phát triển website (không bao gồm các chi phí bên thứ ba như tên miền, hosting, plugin trả phí, v.v.). Yêu cầu hoàn tiền cần được gửi trong vòng 7 ngày kể từ ngày bàn giao cuối cùng hoặc theo thỏa thuận cụ thể trong hợp đồng, và cần nêu rõ lý do không hài lòng.
+                </p>
+                <p class="text-lg text-gray-300">
+                    Mức độ hoàn tiền sẽ được xem xét dựa trên tiến độ công việc đã hoàn thành và mức độ tuân thủ các điều khoản hợp đồng. Chúng tôi luôn ưu tiên tìm kiếm giải pháp để khắc phục mọi vấn đề và đảm bảo bạn nhận được sản phẩm như mong đợi.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 section-dynamic-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-white mb-12 fade-in">Liên Hệ Với Tôi</h2>
+            <div class="max-w-xl mx-auto p-8 glass-effect rounded-2xl shadow-xl fade-in">
+                <form id="contactForm" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-300 text-sm font-bold mb-2">Tên của bạn:</label>
+                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-900 leading-tight focus:outline-none focus:shadow-outline bg-gray-200 glass-effect" placeholder="Nguyễn Văn A" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-300 text-sm font-bold mb-2">Email của bạn:</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-900 leading-tight focus:outline-none focus:shadow-outline bg-gray-200 glass-effect" placeholder="email@example.com" required>
+                    </div>
+                    <!-- Checkboxes for Services -->
+                    <div>
+                        <label class="block text-gray-300 text-sm font-bold mb-2">Dịch vụ bạn quan tâm:</label>
+                        <div class="space-y-2 text-left">
+                            <div class="flex items-center">
+                                <input type="checkbox" id="service-web-co-ban" name="services[]" value="Gói Website Cơ Bản" class="form-checkbox h-5 w-5 text-purple-600 bg-gray-700 border-gray-600 rounded">
+                                <label for="service-web-co-ban" class="ml-2 text-gray-300">Gói Website Cơ Bản</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="service-web-nang-cao" name="services[]" value="Gói Website Nâng Cao" class="form-checkbox h-5 w-5 text-blue-600 bg-gray-700 border-gray-600 rounded">
+                                <label for="service-web-nang-cao" class="ml-2 text-gray-300">Gói Website Nâng Cao</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="service-web-cao-cap" name="services[]" value="Gói Website Cao Cấp" class="form-checkbox h-5 w-5 text-pink-600 bg-gray-700 border-gray-600 rounded">
+                                <label for="service-web-cao-cap" class="ml-2 text-gray-300">Gói Website Cao Cấp</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="service-toi-uu-seo" name="services[]" value="Gói Tối Ưu Hóa SEO" class="form-checkbox h-5 w-5 text-green-600 bg-gray-700 border-gray-600 rounded">
+                                <label for="service-toi-uu-seo" class="ml-2 text-gray-300">Gói Tối Ưu Hóa SEO</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="service-bao-tri" name="services[]" value="Gói Bảo Trì Trang Web" class="form-checkbox h-5 w-5 text-yellow-600 bg-gray-700 border-gray-600 rounded">
+                                <label for="service-bao-tri" class="ml-2 text-gray-300">Gói Bảo Trì Trang Web</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="service-toi-uu-toc-do" name="services[]" value="Gói Tối Ưu Hóa Tốc Độ" class="form-checkbox h-5 w-5 text-red-600 bg-gray-700 border-gray-600 rounded">
+                                <label for="service-toi-uu-toc-do" class="ml-2 text-gray-300">Gói Tối Ưu Hóa Tốc Độ</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-300 text-sm font-bold mb-2">Tin nhắn của bạn:</label>
+                        <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-900 leading-tight focus:outline-none focus:shadow-outline bg-gray-200 glass-effect" placeholder="Tôi muốn hỏi về dịch vụ thiết kế website Liquid Glass..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <!-- Button with new liquid glass style - Made larger -->
+                        <button type="submit" class="inline-flex items-center justify-center align-middle select-none font-sans font-medium text-center px-6 py-3 text-white text-base rounded-lg antialiased liquid-glass-button">
+                            Gửi Tin Nhắn
+                        </button>
+                    </div>
+                </form>
+                <div id="formMessage" class="mt-4 p-4 text-center text-green-400 font-semibold hidden glass-effect rounded-lg">
+                    <!-- Dynamic content for thank you and bank info -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-8 text-center text-gray-400 glass-effect rounded-t-xl">
+        <p>&copy; 2025 Thành Đạt. Tất cả quyền được bảo lưu.</p>
+    </footer>
+
+    <!-- Style Explanation Modal -->
+    <div id="style-explanation-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-button" id="close-modal-btn">&times;</button>
+            <h3 class="text-3xl font-bold text-white mb-4">Tất Cả Phong Cách Thiết Kế</h3>
+            <div id="modal-all-styles-content" class="space-y-6 text-left">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="asset/js/script.js"></script>
+</body>
+</html>

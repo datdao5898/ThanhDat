@@ -1,0 +1,336 @@
+   /* Tùy chỉnh font Inter */
+   html {
+       font-family: 'Inter', sans-serif;
+   }
+
+   /* Hiệu ứng liquid glass cho container */
+   .glass-effect {
+       background: rgba(255, 255, 255, 0.05);
+       /* Nền hơi trong suốt */
+       backdrop-filter: blur(10px);
+       /* Làm mờ nền */
+       -webkit-backdrop-filter: blur(10px);
+       /* Hỗ trợ trình duyệt Webkit */
+       border: 1px solid rgba(255, 255, 255, 0.1);
+       /* Viền mỏng */
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+       /* Đổ bóng nhẹ */
+   }
+
+   /* Cuộn mượt */
+   html {
+       scroll-behavior: smooth;
+   }
+
+   /* Animation cho các phần tử khi scroll */
+   .fade-in {
+       opacity: 0;
+       transform: translateY(20px);
+       transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+       /* Unified timing function */
+   }
+
+   .fade-in.appear {
+       opacity: 1;
+       transform: translateY(0);
+   }
+
+   /* Loading spinner */
+   .spinner {
+       border: 4px solid rgba(255, 255, 255, 0.3);
+       border-top: 4px solid #fff;
+       border-radius: 50%;
+       width: 30px;
+       height: 30px;
+       animation: spin 1s linear infinite;
+   }
+
+   @keyframes spin {
+       0% {
+           transform: rotate(0deg);
+       }
+
+       100% {
+           transform: rotate(360deg);
+       }
+   }
+
+   /* Custom button styling for liquid glass effect */
+   .liquid-glass-button {
+       position: relative;
+       /* Required for before/after pseudo-elements */
+       background: rgba(255, 255, 255, 0.025);
+       /* bg-white/2.5 */
+       border: 1px solid rgba(255, 255, 255, 0.5);
+       /* border border-white/50 */
+       backdrop-filter: blur(4px);
+       /* backdrop-blur-sm - slightly adjusted for visual effect */
+       -webkit-backdrop-filter: blur(4px);
+       box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.75),
+           /* inset_0_1px_0px_rgba(255,255,255,0.75) */
+           0 0 9px rgba(0, 0, 0, 0.2),
+           /* 0_0_9px_rgba(0,0,0,0.2) */
+           0 3px 8px rgba(0, 0, 0, 0.15);
+       /* 0_3px_8px_rgba(0,0,0,0.15) */
+       transition: all 0.3s ease;
+       /* transition-all duration-300 */
+   }
+
+   .liquid-glass-button:hover {
+       background: rgba(255, 255, 255, 0.3);
+       /* hover:bg-white/30 */
+   }
+
+   /* Pseudo-elements for additional gradient overlays */
+   .liquid-glass-button::before {
+       content: '';
+       position: absolute;
+       inset: 0;
+       border-radius: inherit;
+       /* Inherit border-radius from parent */
+       background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), transparent, transparent);
+       opacity: 0.8;
+       pointer-events: none;
+   }
+
+   .liquid-glass-button::after {
+       content: '';
+       position: absolute;
+       inset: 0;
+       border-radius: inherit;
+       /* Inherit border-radius from parent */
+       background: linear-gradient(to top left, rgba(255, 255, 255, 0.5), transparent, transparent);
+       opacity: 0.6;
+       pointer-events: none;
+   }
+
+   /* New animation for cycling text */
+   @keyframes fadeInOutUp {
+       0% {
+           opacity: 0;
+       }
+
+       10% {
+           opacity: 1;
+       }
+
+       90% {
+           opacity: 1;
+       }
+
+       100% {
+           opacity: 0;
+       }
+   }
+
+   .text-cycling-animation {
+       animation: fadeInOutUp 3s ease-in-out forwards;
+   }
+
+   /* Modal specific styles */
+   .modal-overlay {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgba(0, 0, 0, 0.7);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       z-index: 1000;
+       opacity: 0;
+       visibility: hidden;
+       transition: opacity 0.3s ease, visibility 0.3s ease;
+   }
+
+   .modal-overlay.show {
+       opacity: 1;
+       visibility: visible;
+   }
+
+   .modal-content {
+       background: rgba(25, 25, 35, 0.9);
+       /* Darker glass effect for modal */
+       backdrop-filter: blur(15px);
+       -webkit-backdrop-filter: blur(15px);
+       border: 1px solid rgba(255, 255, 255, 0.15);
+       border-radius: 1rem;
+       /* rounded-2xl equivalent */
+       padding: 2rem;
+       max-width: 600px;
+       width: 90%;
+       max-height: 80vh;
+       /* Limit height for scrollability */
+       overflow-y: auto;
+       /* Enable scrolling for long content */
+       color: #E2E8F0;
+       /* text-gray-200 */
+       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+       position: relative;
+       transform: translateY(-20px);
+       opacity: 0;
+       transition: transform 0.3s ease, opacity 0.3s ease;
+   }
+
+   .modal-overlay.show .modal-content {
+       transform: translateY(0);
+       opacity: 1;
+   }
+
+   .modal-close-button {
+       position: absolute;
+       top: 1rem;
+       right: 1rem;
+       background: none;
+       border: none;
+       font-size: 1.5rem;
+       color: #94A3B8;
+       /* text-gray-400 */
+       cursor: pointer;
+       transition: color 0.2s ease;
+   }
+
+   .modal-close-button:hover {
+       color: #FFFFFF;
+   }
+
+   /* Highlight style in modal */
+   .modal-style-highlight {
+       background-color: rgba(66, 153, 225, 0.2);
+       /* bg-blue-500 with transparency */
+       border: 1px solid #4299E1;
+       /* border-blue-500 */
+       box-shadow: 0 0 10px rgba(66, 153, 225, 0.4);
+       /* subtle blue glow */
+       padding: 0.75rem;
+       /* p-3 */
+       border-radius: 0.5rem;
+       /* rounded-lg */
+   }
+
+   /* Section Background Enhancements */
+   .section-dynamic-bg {
+       position: relative;
+       overflow: hidden;
+       background-color: #1a202c;
+       /* Ensure a base dark background */
+   }
+
+   .section-dynamic-bg::before {
+       content: '';
+       position: absolute;
+       top: -20%;
+       left: -20%;
+       width: 140%;
+       height: 140%;
+       /* Enhanced gradient visibility and size */
+       background: radial-gradient(circle at 0% 0%, rgba(108, 92, 231, 0.15) 0%, transparent 40%),
+           /* Increased opacity */
+           radial-gradient(circle at 100% 100%, rgba(9, 132, 227, 0.15) 0%, transparent 40%),
+           /* Increased opacity */
+           linear-gradient(135deg, rgba(232, 67, 147, 0.08) 0%, transparent 55%);
+       /* Increased opacity */
+       background-size: 70% 70%, 70% 70%, 100% 100%;
+       /* Larger background size for more prominent gradients */
+       background-repeat: no-repeat;
+       animation: backgroundPanSlow 60s linear infinite alternate;
+       z-index: 0;
+       opacity: 1;
+   }
+
+   @keyframes backgroundPanSlow {
+       0% {
+           background-position: 0% 0%, 100% 100%, 0% 0%;
+       }
+
+       100% {
+           background-position: 100% 100%, 0% 0%, 100% 100%;
+       }
+   }
+
+   /* Ensure content stays above the pseudo-element */
+   .section-dynamic-bg>*:not(.section-dynamic-bg::before) {
+       position: relative;
+       z-index: 1;
+   }
+
+   /* Hamburger Menu Styles */
+   .hamburger-menu {
+       display: none;
+       /* Hidden by default on larger screens */
+       cursor: pointer;
+       flex-direction: column;
+       justify-content: space-between;
+       width: 30px;
+       height: 20px;
+       position: relative;
+       z-index: 1001;
+       /* Above header */
+   }
+
+   .hamburger-menu span {
+       display: block;
+       width: 100%;
+       height: 3px;
+       background-color: #fff;
+       border-radius: 2px;
+       transition: all 0.3s ease-in-out;
+   }
+
+   /* Mobile Nav Overlay */
+   .mobile-nav-overlay {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgba(0, 0, 0, 0.9);
+       /* Dark overlay */
+       backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+       z-index: 999;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       transform: translateX(100%);
+       /* Start off-screen to the right */
+       transition: transform 0.3s ease-in-out;
+   }
+
+   .mobile-nav-overlay.open {
+       transform: translateX(0);
+       /* Slide in */
+   }
+
+   .mobile-nav-overlay a {
+       font-size: 1.8rem;
+       padding: 1rem 0;
+       color: white;
+       opacity: 0.8;
+       transition: opacity 0.2s ease-in-out;
+       text-decoration: none;
+       /* Remove underline by default */
+   }
+
+   .mobile-nav-overlay a:hover {
+       opacity: 1;
+       color: #a78bfa;
+       /* purple-400 */
+       text-decoration: underline;
+       /* Add underline on hover */
+   }
+
+   /* Show hamburger and hide desktop nav on small screens */
+   @media (max-width: 768px) {
+
+       /* Tailwind's 'md' breakpoint */
+       .hamburger-menu {
+           display: flex;
+       }
+
+       header nav .flex.space-x-6 {
+           display: none;
+       }
+   }
