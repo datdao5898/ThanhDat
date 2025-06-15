@@ -139,6 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentStyleIndex = 0;
     const designStyleTextElement = document.getElementById('design-style-text');
+    const textStyle = document.querySelectorAll('.design-style-class'); // Use querySelectorAll to get a NodeList
+
     const heroBackgroundImageElement = document.getElementById('hero-background-image'); // Get the image element
     const modalOverlay = document.getElementById('style-explanation-modal');
     const modalAllStylesContent = document.getElementById('modal-all-styles-content');
@@ -219,6 +221,13 @@ document.addEventListener('DOMContentLoaded', () => {
         populateAndShowAllStylesModal(currentlyDisplayedStyle);
     });
 
+    // Event listener for clicking any element with the class 'design-style-class'
+    textStyle.forEach(element => {
+        element.addEventListener('click', () => {
+            populateAndShowAllStylesModal();
+        });
+    });
+
     // Event listener for closing the modal
     closeModalBtn.addEventListener('click', closeModal);
     modalOverlay.addEventListener('click', (e) => {
@@ -256,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 case 'Gói Tối Ưu Hóa SEO':
                     checkboxId = 'service-toi-uu-seo';
                     break;
-                case 'Gói Bảo Trì Trang Web':
+                case 'Gói Cập Nhật Bảo Trì Trang Web':
                     checkboxId = 'service-bao-tri';
                     break;
                 case 'Gói Tối Ưu Hóa Tốc Độ':
@@ -311,4 +320,29 @@ document.addEventListener('DOMContentLoaded', () => {
         transform: translateY(-8px) rotate(-45deg);
     }
     */
+
+    // Modal logic for "Khám phá các loại website tôi thiết kế" button
+    const showCategoriesBtn = document.querySelector('.categories-web'); // Use querySelector to get the first element
+    const categoriesModal = document.getElementById('categories-modal');
+    const closeCategoriesModalBtn = document.getElementById('close-categories-modal-btn');
+
+    if (showCategoriesBtn) {
+        showCategoriesBtn.addEventListener('click', () => {
+            categoriesModal.classList.add('show');
+        });
+    }
+
+    if (closeCategoriesModalBtn) {
+        closeCategoriesModalBtn.addEventListener('click', () => {
+            categoriesModal.classList.remove('show');
+        });
+    }
+
+    if (categoriesModal) {
+        categoriesModal.addEventListener('click', (e) => {
+            if (e.target === categoriesModal) { // Close only when clicking on the overlay, not the content
+                categoriesModal.classList.remove('show');
+            }
+        });
+    }
 });

@@ -334,3 +334,50 @@
            display: none;
        }
    }
+
+   /* Styling for categories within the modal */
+   .modal-category-title {
+       font-size: 1.5rem;
+       /* text-2xl */
+       font-weight: bold;
+       /* font-bold */
+       color: #6366F1;
+       /* indigo-500 */
+       margin-top: 1.5rem;
+       /* mt-6 */
+       margin-bottom: 0.75rem;
+       /* mb-3 */
+       display: flex;
+       align-items: center;
+       gap: 0.5rem;
+   }
+
+   .modal-category-list {
+       list-style: none;
+       /* Remove default list style */
+       padding-left: 0;
+       margin-bottom: 1.5rem;
+       /* mb-6 */
+   }
+
+   .modal-category-list li {
+       font-size: 1rem;
+       /* text-base */
+       color: #CBD5E0;
+       /* text-gray-300 */
+       margin-bottom: 0.5rem;
+       /* mb-2 */
+       padding-left: 1.5rem;
+       /* Indent list items */
+       position: relative;
+   }
+
+   .modal-category-list li::before {
+       content: '•';
+       /* Custom bullet point */
+       color: #ffffff;
+       /* indigo-500 */
+       position: absolute;
+       left: 0;
+       top: 0;
+   }
