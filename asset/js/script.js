@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const formMessage = document.getElementById('formMessage');
 
     contactForm.addEventListener('submit', function (e) {
-        e.preventDefault(); // Ngăn chặn form gửi đi mặc định
+        // e.preventDefault(); // Ngăn chặn form gửi đi mặc định
 
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
