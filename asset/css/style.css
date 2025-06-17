@@ -381,3 +381,126 @@
        left: 0;
        top: 0;
    }
+
+   .icon-container {
+       position: relative;
+       background: rgba(255, 255, 255, 0.2);
+       /* Nền bán trong suốt cho container */
+       backdrop-filter: blur(10px);
+       /* Hiệu ứng kính mờ */
+       border-radius: 4px;
+       box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+       /* Bóng mềm */
+       border: 1px solid rgba(255, 255, 255, 0.3);
+       /* Viền sáng */
+       transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+   }
+
+   /* Container cho các icon liên hệ */
+   .contact-icons-container {
+       position: fixed;
+       /* Đặt vị trí cố định trên màn hình */
+       bottom: 20px;
+       /* Cách đáy 20px */
+       right: 20px;
+       /* Cách phải 20px */
+       display: flex;
+       flex-direction: column;
+       /* Xếp icon theo chiều dọc */
+       gap: 15px;
+       /* Khoảng cách giữa các icon */
+       z-index: 1000;
+       /* Đảm bảo icon nằm trên cùng */
+   }
+
+   /* Kiểu dáng chung cho mỗi icon */
+   .contact-icon {
+       width: 60px;
+       /* Kích thước icon */
+       height: 60px;
+       border-radius: 50%;
+       /* Hình tròn */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       /* Hiệu ứng Liquid Glass */
+       background: rgba(255, 255, 255, 0.2);
+       /* Nền trắng trong suốt */
+       backdrop-filter: blur(10px);
+       /* Hiệu ứng làm mờ nền phía sau */
+       -webkit-backdrop-filter: blur(10px);
+       /* Hỗ trợ cho Safari */
+       border: 1px solid rgba(255, 255, 255, 0.3);
+       /* Viền mờ */
+       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.05);
+       /* Đổ bóng nhẹ */
+       transition: all 0.3s ease;
+       /* Chuyển động mượt mà khi hover */
+       cursor: pointer;
+       overflow: hidden;
+       /* Đảm bảo hiệu ứng ánh sáng không tràn ra ngoài */
+       position: relative;
+       text-decoration: none;
+       /* Bỏ gạch chân cho thẻ a */
+   }
+
+   /* Hiệu ứng ánh sáng lướt qua khi hover */
+   .contact-icon::before {
+       content: '';
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+       opacity: 0;
+       transition: opacity 0.3s ease;
+       z-index: 1;
+       /* Nằm trên nền */
+   }
+
+   /* Hiệu ứng khi hover vào icon */
+   .contact-icon:hover {
+       transform: translateY(-8px);
+       /* Nhấc icon lên một chút */
+       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.08);
+       /* Đổ bóng đậm hơn */
+   }
+
+   .contact-icon:hover::before {
+       opacity: 1;
+       /* Hiện hiệu ứng ánh sáng */
+   }
+
+   /* Kiểu dáng cho SVG bên trong icon */
+   .contact-icon svg {
+       width: 50%;
+       /* Kích thước SVG so với container cha */
+       height: 50%;
+       fill: white;
+       /* Màu icon trắng */
+       filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
+       /* Đổ bóng cho icon */
+       position: relative;
+       z-index: 2;
+       /* Nằm trên hiệu ứng ánh sáng */
+   }
+
+   /* Điều chỉnh kích thước icon trên màn hình nhỏ */
+   @media (max-width: 768px) {
+       .contact-icons-container {
+           bottom: 15px;
+           right: 15px;
+           gap: 10px;
+       }
+
+       .contact-icon {
+           width: 50px;
+           height: 50px;
+       }
+
+       .contact-icon svg {
+           width: 55%;
+           height: 55%;
+       }
+   }

@@ -82,28 +82,25 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hiển thị thông báo thành công và thông tin thanh toán
         formMessage.innerHTML = `
                     <p class="text-xl text-white mb-2">Cảm ơn bạn, <span class="font-bold">${name}!</span></p>
-                    <p class="text-gray-300 mb-4">Tôi đã nhận được yêu cầu của bạn và sẽ liên hệ lại qua email **${email}** sớm nhất có thể.</p>
-                    <p class="text-lg text-blue-300 font-semibold mb-2">Thông tin tài khoản để thanh toán:</p>
-                    <p class="text-white font-bold text-base">Ngân hàng: Techcombank</p>
-                    <p class="text-white font-bold text-base">Số tài khoản: 1903xxxxxxxx</p>
-                    <p class="text-white font-bold text-base">Chủ tài khoản: NGUYEN VAN A</p>
-                    <p class="text-sm text-gray-400 mt-4">Vui lòng ghi rõ nội dung chuyển khoản: **Tên của bạn - Dịch vụ**.</p>
+                    <p class="text-gray-300 mb-4">Thành Đạt WEB đã nhận được yêu cầu của quý khách và sẽ liên hệ lại qua email **${email}** sớm nhất có thể.</p>
+                    
                 `;
         formMessage.classList.remove('hidden');
 
         // Đặt lại form và bỏ chọn tất cả các checkbox
-        contactForm.reset();
-        document.querySelectorAll('input[name="services[]"]').forEach(checkbox => {
-            checkbox.checked = false;
-        });
+        contactForm.style.display = 'none'; // Ẩn form sau khi gửi
+        // contactForm.reset();
+        // document.querySelectorAll('input[name="services[]"]').forEach(checkbox => {
+        //     checkbox.checked = false;
+        // });
 
         // Cuộn lên đầu form để thấy thông báo
         formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
         // Ẩn thông báo sau 10 giây (hoặc bạn có thể để vĩnh viễn cho đến khi người dùng tự tắt)
-        setTimeout(() => {
-            formMessage.classList.add('hidden');
-        }, 10000);
+        // setTimeout(() => {
+        //     formMessage.classList.add('hidden');
+        // }, 10000);
     });
 
     // Logic for cycling text in Hero Section and showing explanation modal
@@ -262,14 +259,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 case 'Gói Website Cao Cấp':
                     checkboxId = 'service-web-cao-cap';
                     break;
-                case 'Gói Tối Ưu Hóa SEO':
-                    checkboxId = 'service-toi-uu-seo';
+                case 'Gói Bảo Trì Cơ Bản':
+                    checkboxId = 'service-bao-tri-co-ban';
                     break;
-                case 'Gói Cập Nhật Bảo Trì Trang Web':
-                    checkboxId = 'service-bao-tri';
+                case 'Gói Bảo Trì Nâng Cao':
+                    checkboxId = 'service-bao-tri-nang-cao';
                     break;
-                case 'Gói Tối Ưu Hóa Tốc Độ':
-                    checkboxId = 'service-toi-uu-toc-do';
+                case 'Gói Bảo Trì Đồng Hành':
+                    checkboxId = 'service-bao-tri-dong-hanh';
                     break;
                 default:
                     checkboxId = null;
