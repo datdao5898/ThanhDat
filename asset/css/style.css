@@ -441,7 +441,8 @@
        /* Đảm bảo hiệu ứng ánh sáng không tràn ra ngoài */
        position: relative;
        text-decoration: none;
-       /* Bỏ gạch chân cho thẻ a */
+       animation: shake 2s infinite cubic-bezier(.36, .07, .19, .97) both;
+       transform-origin: center;
    }
 
    /* Hiệu ứng ánh sáng lướt qua khi hover */
@@ -502,5 +503,30 @@
        .contact-icon svg {
            width: 55%;
            height: 55%;
+       }
+   }
+
+   /* Keyframes cho hiệu ứng rung */
+   @keyframes shake {
+
+       10%,
+       90% {
+           transform: translate3d(-0.5px, 0, 0);
+       }
+
+       20%,
+       80% {
+           transform: translate3d(0.7px, 0, 0);
+       }
+
+       30%,
+       50%,
+       70% {
+           transform: translate3d(-1px, 0, 0);
+       }
+
+       40%,
+       60% {
+           transform: translate3d(1px, 0, 0);
        }
    }
